@@ -178,7 +178,7 @@ app.delete("/user/:id",(req,res)=>{
      if(enteredPassword!=user.password && enteredName!=user.name){
       res.send("Wrong Credentials! Try again");
      }
-     else{
+     else{``
 let q5=`Delete from user where name="${enteredName}"`;
 connection.query(q5,(err,result)=>{
   res.send("user is deleted successfully");
